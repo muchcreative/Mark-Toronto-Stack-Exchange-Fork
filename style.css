@@ -1,0 +1,649 @@
+/* Color Palette: https://colorhunt.co/palette/f9f7f7dbe2ef3f72af112d4e */
+
+/* NAV BAR */
+nav{
+    background-color: #DBE2EF;
+    color: #112D4E;
+    height: 4rem;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    font-family: 'Press Start 2P';
+    display: flex;
+    flex-wrap: wrap;         
+}
+
+nav li{
+    display: inline;
+}
+
+nav a:link, a:visited {    
+    color: #112D4E;    
+    text-decoration: none;
+    margin: 0 5rem;     
+  }
+
+nav a:hover{
+    color: #f64060;
+}
+
+@media only screen and (max-width: 980px) {
+    nav a:link, a:visited {    
+        color: #112D4E;
+        font-size: 1rem;    
+        text-decoration: none;
+        margin: 0 3rem;     
+      }   
+}
+
+@media only screen and (max-width: 720px) {
+    nav a:link, a:visited {    
+        color: #112D4E;
+        font-size: 1rem;    
+        text-decoration: none;
+        margin: 0 2rem;     
+      }   
+}
+
+@media only screen and (max-width: 595px) {
+    nav a:link, a:visited {    
+        color: #112D4E;
+        font-size: 1rem;    
+        text-decoration: none;
+        margin: 0 1rem;     
+      }   
+}
+
+@media only screen and (max-width: 470px) {
+    nav a:link, a:visited {    
+        color: #112D4E;
+        font-size: 0.7rem;    
+        text-decoration: none;
+        margin: 0 0.5rem;     
+      }   
+}
+
+/* HERO SECTION */
+.hero{
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    background-image: url("./img/hero.png");
+    background-repeat: repeat;
+    background-size: 50px 50px;
+    color: #F9F7F7;
+    height: 35.5rem;
+    font-family: 'Press Start 2P';    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1rem, 45rem));
+}
+
+.hero .title-text{
+    background-color: #112d4ed0;
+    padding: 1rem;
+    margin: 1rem;
+    width: 33.5rem;
+    height: 20rem;
+    font-size: 2rem;
+}
+
+.hero p{
+    font-size: 1rem;
+    text-align: center;
+}
+
+.hero img{
+    width: 100x;
+    height: 50px;
+    vertical-align: middle;
+}
+
+.hero a {
+    text-decoration: none;
+    height: 5rem;
+    padding: 32px 32px;
+    background-color: #f64060;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    transition: transform 200ms, box-shadow 200ms ease;    
+    box-shadow: 5px 10px 0px 0px #8a2336;
+    border: 1px solid #8a2336;
+    color: #F9F7F7;
+}
+
+.hero a:hover, .hero a:focus {
+    box-shadow: 3px 5px #8a2336;
+    background-color: #F9F7F7;
+    color: #f64060;
+    transform: translateY(5px);
+}
+
+.hero a:active {
+    box-shadow: 0px 0px #8a2336;
+    transform: translateY(10px);
+}
+
+@media only screen and (max-width: 1439px) {
+    .hero{
+        height: 32.4rem;
+    } 
+}
+
+@media only screen and (max-width: 560px) {
+    .hero{
+        height: 25rem;
+    } 
+    
+    .hero .title-text{
+        width: 26rem;
+        height: 15rem;
+        font-size: 1.5rem;
+     }
+}
+
+@media only screen and (max-width: 430px) {
+    .hero .title-text{
+       width: 20rem;
+       height: 15rem;
+       font-size: 1rem;
+    }
+
+    .hero .title-text p{
+        padding-top: 1.5rem;
+    }
+}
+
+/* INFO SECTION */
+.info{
+    font-family:'Chakra Petch', sans-serif;
+    font-size: 1.5rem;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(1rem, 35rem));
+}
+
+.info .img-container{
+    width: 20rem;
+    height: 20rem;
+    margin-bottom: 1rem;
+}
+
+.info .text-container{
+    padding: 2rem;
+    text-align: center;
+    background-color: #DBE2EF;
+    color: #112D4E;
+    box-shadow: 10px 10px #969faf;
+}
+
+.info b{
+    color: #f64060;
+}
+
+@media only screen and (max-width: 605px) {
+    .info .text-container{
+        padding: 2rem;
+        text-align: center;
+        background-color: #DBE2EF;
+        color: #112D4E;
+        width: 20rem;
+        height: 50rem;
+        box-shadow: 10px 10px #969faf;
+    }
+}
+
+/* ABOUT (ABOUT CARDS) */
+.about{
+    font-family: 'Press Start 2P';
+    font-size: 1.5rem;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-top: 5rem;
+    background-color: #3b6aa347;
+    display: grid;
+    height: 40rem;    
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+}
+
+.about .about-card{
+    background-color: #112d4eba;
+    color: #DBE2EF;
+    height: 30rem;
+    width: 25rem;
+    box-shadow: 10px 10px #f64060;
+    border-radius: 1rem;
+    padding: 2rem;
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;    
+}
+
+.about .about-card img{
+    height: 10rem;
+    width: 10rem;
+}
+
+.about .about-card h5{
+    font-family:'Chakra Petch', sans-serif;
+}
+
+@media only screen and (max-width: 1968px) {
+    .about{        
+        height: 75rem;
+        grid-template-columns: repeat(auto-fit, minmax(1rem, 42rem));
+    }
+}
+
+@media only screen and (max-width: 1360px) {
+    .about{        
+        height: 140rem;   
+    }
+}
+
+@media only screen and (max-width: 995px) {
+    .about{        
+        height: 150rem;
+    }
+
+    .about .about-card{
+        height: 30rem;
+        width: 20rem;
+        box-shadow: 10px 10px #f64060;
+        border-radius: 1rem;
+        padding: 2rem;
+        display: flex;
+        gap: 3rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;    
+    }
+}
+
+/* FAQ */
+.question-answer-container{
+    font-family: 'Press Start 2P';
+    font-size: 1.5rem;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin: 4rem 0;    
+    gap: 1rem;
+    background-color: #F9F7F7;
+    display: grid;
+    height: 40rem;
+    grid-template-columns: repeat(auto-fit, minmax(60rem, 1fr));
+}
+
+.question{
+    background-color: #DBE2EF;
+    color: #112D4E;
+    width: 60rem;
+    height: 9rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 5px #969faf;
+}
+
+.question h1{
+    color: #f64060;
+}
+
+.answer{
+    background-color: #DBE2EF;
+    color: #112D4E;
+    width: 60rem;
+    height: 9rem;
+    padding: 2rem;
+    font-family:'Chakra Petch', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 5px #969faf;
+}
+
+@media only screen and (max-width: 1952px) {
+    .question-answer-container{        
+        height: 85rem;
+    }
+}
+
+@media only screen and (max-width: 970px) {
+    .question-answer-container{        
+        height: 170rem;
+    }
+    
+    .question{
+        width: 20rem;
+        height: 20rem;
+        font-size: 1.2rem;
+    }
+    .answer{
+        width: 20rem;
+        height: 20rem;
+    }
+}
+
+/* Location & Time */
+.location-time{
+    font-family: 'Press Start 2P';
+    font-size: 1.5rem;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-top: 1rem;
+    background-color: #3b6aa347;
+    display: grid;
+    height: 40rem;    
+    grid-template-columns: repeat(auto-fit, minmax(1rem, 35rem));
+}
+
+.location-time .location{
+    background-color: #3b6aa3d1;
+    color: #F9F7F7;
+    box-shadow: 5px 5px #f64060;
+    width: 30rem;
+    height: 30rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.location-time .location img{
+    margin: 1rem;
+}
+
+.location-time .location h2{
+    text-align: center;
+    text-shadow: 5px 5px #112D4E;
+}
+
+.location-time .location h3, .location-time .location p {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.location-time .time{
+    background-color: #3b6aa3d1;
+    color: #F9F7F7;
+    box-shadow: 5px 5px #f64060;
+    width: 30rem;
+    height: 30rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.location-time .time img{
+    width: 12rem;
+    height: 12rem;
+    margin: 2rem;
+}
+
+.location-time .time h2{
+    text-align: center;
+    text-shadow: 5px 5px #112D4E;
+}
+
+.location-time .time h3, .location-time .time p {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1136px) {
+    .location-time{
+        height: 80rem;               
+    }
+}
+
+@media only screen and (max-width: 515px) {
+    .location-time .location{
+        height: 32rem;
+        width: 20rem;
+    }
+
+    .location-time .time{
+        height: 32rem;
+        width: 20rem;
+    }
+
+    .location-time .time p{
+        font-size: 1.9rem;
+    }
+}
+
+/* Sign up */
+.sign-up {
+    font-family: 'Press Start 2P';
+    font-size: 1rem;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;        
+    background-color: #F9F7F7;
+    background-image: url("./img/hero.png");
+    background-repeat: repeat;
+    background-size: 50px 50px;
+    display: grid;
+    height: 35rem;
+    grid-template-columns: repeat(auto-fit, minmax(1rem, 40rem));
+}
+
+.sign-up .meetup .meetup-button-small{
+    display: none;
+}
+
+.sign-up .tse .tsepage-button-small{
+    display: none;
+}
+
+.sign-up .discord .discord-button-small{
+    display: none;
+}
+
+.sign-up .meetup .step-1-small{
+    display: none;
+}
+
+.sign-up .tse .step-2-small{
+    display: none;
+}
+
+.sign-up .discord .step-3-small{
+    display: none;
+}
+
+.sign-up .meetup, .sign-up .tse, .sign-up .discord{
+    background-color: #DBE2EF;
+    color: #3F72AF;    
+    width: 40rem;
+    height: 17rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 1rem;    
+}
+
+.sign-up .meetup h2, .sign-up .tse h2, .sign-up .discord h2{
+    text-shadow: 3px 3px #F9F7F7;
+}
+
+.sign-up .meetup{
+    box-shadow: 0px 7px #969faf;
+}
+
+.sign-up .tse{
+    box-shadow: 0px 7px #969faf;
+}
+
+.sign-up .discord{    
+    box-shadow: 0px 7px #969faf;
+    border-right: 7px solid #969faf;
+}
+
+.sign-up i{
+    color: #f64060;
+    text-shadow: 3px 3px #5e1724;
+}
+
+.sign-up a {
+    text-decoration: none;
+    height: 5rem;
+    padding: 32px 32px;
+    background-color: #f64060;
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+    font-size: 1rem;      
+    transition: transform 200ms, box-shadow 200ms ease;    
+    box-shadow: 5px 10px 0px 0px #8a2336;
+    border: 1px solid #8a2336;
+    color: #F9F7F7;
+}
+
+.sign-up a:hover, .sign-up a:focus {
+    box-shadow: 3px 5px #8a2336;
+    background-color: #F9F7F7;
+    color: #f64060;
+    transform: translateY(5px);
+}
+
+.sign-up a:active {
+    box-shadow: 0px 0px #8a2336;
+    transform: translateY(10px);
+}
+
+@media only screen and (max-width: 1952px) {
+    .sign-up{
+        font-size: 0.9rem;        
+        grid-template-columns: repeat(auto-fit, minmax(1rem, 35rem));
+    }
+    
+    .sign-up .meetup, .sign-up .tse, .sign-up .discord{
+        width: 35rem;               
+    }
+
+    .sign-up a{
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 1735px) {
+    .sign-up{
+        grid-template-columns: repeat(auto-fit, minmax(72rem, 72rem));
+        font-size: 1rem;
+        height: 65rem;        
+    }
+    
+    .sign-up .meetup, .sign-up .tse, .sign-up .discord{
+        width: 40rem; 
+        box-shadow: 7px 7px #969faf; 
+    }
+
+    .sign-up .discord{
+        border-right: none;
+        margin-bottom: 1rem;
+    }
+
+    .sign-up a{
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 655px) {
+    .sign-up{
+        height: 75rem;
+    }
+    
+    .sign-up .meetup, .sign-up .tse, .sign-up .discord{
+        width: 19rem;
+        height: 20rem;        
+        padding: 3rem 1rem;
+        text-align: center;
+    }
+
+    .sign-up .meetup .meetup-button-large{
+        display: none;
+    }
+
+    .sign-up .tse .tsepage-button-large{
+        display: none;
+    }
+    
+    .sign-up .discord .discord-button-large{
+        display: none;
+    }
+    
+    .sign-up .meetup .step-1-big{
+        display: none;
+    }
+
+    .sign-up .tse .step-2-big{
+        display: none;
+    }
+
+    .sign-up .discord .step-3-big{
+        display: none;
+    }
+
+    .sign-up .meetup .step-1-small{
+        display: flex;
+        flex-direction: column;       
+    }
+
+    .sign-up .meetup .step-1-small i{
+        color: #f64060;
+        text-shadow: 3px 3px #5e1724;
+        font-size: 1.5rem;
+        margin-bottom: 2rem;      
+    }
+
+    .sign-up .tse .step-2-small{
+        display: flex;
+        flex-direction: column;        
+    }
+
+    .sign-up .tse .step-2-small i{
+        color: #f64060;
+        text-shadow: 3px 3px #5e1724;
+        font-size: 1.5rem;    
+        margin-bottom: 2rem;    
+    }
+
+    .sign-up .discord .step-3-small{
+        display: flex;
+        flex-direction: column;        
+    }
+
+    .sign-up .discord .step-3-small i{
+        color: #f64060;
+        text-shadow: 3px 3px #5e1724;
+        font-size: 1.5rem;    
+        margin-bottom: 2rem;    
+    }
+
+    .sign-up .meetup .meetup-button-small {
+        display: block;
+    }
+
+    .sign-up .tse .tsepage-button-small{
+        display: block;
+    }
+    
+    .sign-up .discord .discord-button-small{
+        display: block;
+    }
+}
